@@ -9,7 +9,8 @@ export const mapData = (pagesData = [{}]) => {
       title = '',
       sections = [],
       menu = {},
-    } = data;
+    } = data.attributes;
+    console.log(data.attributes);
 
     //console.log(data.data);
 
