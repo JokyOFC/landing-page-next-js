@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 export const Container = styled.a`
-  ${({ theme }) => css`
+  ${() => css`
     siplay: flex;
     align-items: center;
     text-decoration: none;

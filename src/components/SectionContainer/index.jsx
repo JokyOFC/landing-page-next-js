@@ -1,9 +1,14 @@
 import P from 'prop-types';
+import { SectionBackground } from '../SectionBackground';
 
 import * as Styled from './styles';
 
 export const SectionContainer = ({ children, background = false }) => {
-  return <Styled.Container>{children}</Styled.Container>;
+  return (
+    <SectionBackground background={background}>
+      <Styled.Container>{children}</Styled.Container>;
+    </SectionBackground>
+  );
 };
 
 SectionContainer.propTypes = {
